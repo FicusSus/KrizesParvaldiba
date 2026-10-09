@@ -1,0 +1,88 @@
+# General
+.git/
+.DS_Store
+*.log
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.pyc
+__pycache__/
+
+# Python
+venv/
+.env
+.env.local
+.env.*.local
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+*.egg
+
+# Node.js
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+frontend/yarn-error.log
+frontend/.cache/
+frontend/.parcel-cache/
+
+# Build outputs
+frontend/dist/
+frontend/build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.sqlite
+*.db
+
+# ML Models
+ml/models/
+ml/features/
+
+# Data
+data/
+
+# Test coverage
+coverage/
+
+# Python virtual environment
+.Python
+bin/
+include/
+lib/
+lib64/
+Share/
+tools/
+
+# Local overrides
+*.local
+
+# Temporary files
+tmp/
+temp/
