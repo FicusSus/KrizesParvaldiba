@@ -61,7 +61,7 @@ class Prediction(Base):
         training_time: Time taken to train in seconds
         prediction_time: Time taken to predict in seconds
         error_message: Error message if prediction failed
-        metadata: Additional metadata as JSON
+        extra_data: Additional metadata as JSON
         created_at: Creation timestamp
         updated_at: Last update timestamp
     """
@@ -95,7 +95,7 @@ class Prediction(Base):
     training_time: Mapped[Optional[float]] = mapped_column(Float)
     prediction_time: Mapped[Optional[float]] = mapped_column(Float)
     error_message: Mapped[Optional[str]] = mapped_column(Text)
-    metadata: Mapped[Optional[dict]] = mapped_column(Text, default={})
+    extra_data: Mapped[Optional[dict]] = mapped_column(Text, default={})
     created_at: Mapped[datetime] = mapped_column(
         DateTime,
         default=datetime.utcnow,

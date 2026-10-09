@@ -1,8 +1,7 @@
-"""
-Crisis Page
-
-Parent component for crisis-related routes.
-"""
+/**
+ * Crisis Page
+ * Parent component for crisis-related routes.
+ */
 
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';

@@ -1,8 +1,7 @@
-"""
-Warnings Page
-
-Parent component for warning-related routes.
-"""
+/**
+ * Warnings Page
+ * Parent component for warning-related routes.
+ */
 
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';

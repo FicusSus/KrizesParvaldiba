@@ -1,8 +1,7 @@
-"""
-Users Page
-
-Page for managing users (Admin only).
-"""
+/**
+ * Users Page
+ * Page for managing users (Admin only).
+ */
 
 import React from 'react';
 

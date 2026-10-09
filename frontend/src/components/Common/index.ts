@@ -1,8 +1,7 @@
-"""
-Common Components
-
-Export all common components for easy importing.
-"""
+/**
+ * Common Components
+ * Export all common components for easy importing.
+ */
 
 export { default as DataTable } from './DataTable';
 export {

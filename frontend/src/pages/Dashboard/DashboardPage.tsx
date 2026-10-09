@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { 
   AlertTriangle, 
   Database, 
@@ -171,8 +172,8 @@ function DashboardPage() {
           />
           
           <SystemHealthCard 
-            health={stats.system_health} 
-            accuracy={stats.model_accuracy}
+            health={stats?.system_health || 100} 
+            accuracy={stats?.model_accuracy || 95}
           />
         </motion.div>
       )}
@@ -212,7 +213,7 @@ function DashboardPage() {
                   <div 
                     className="progress-bar-fill bg-primary-600" 
                     style={{
-                      width: `${(dataProcessingStats.processed_size / dataProcessingStats.total_size) * 100}%`
+                      width: `${((dataProcessingStats?.processed_size || 0) / (dataProcessingStats?.total_size || 1)) * 100}%`
                     }}
                   />
                 </div>
@@ -221,25 +222,25 @@ function DashboardPage() {
                   <div>
                     <p className="text-sm text-gray-600">Rows Processed</p>
                     <p className="text-lg font-semibold text-gray-900">
-                      {dataProcessingStats.row_count.toLocaleString()}
+                      {(dataProcessingStats?.row_count || 0).toLocaleString()}
                     </p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Columns</p>
                     <p className="text-lg font-semibold text-gray-900">
-                      {dataProcessingStats.column_count}
+                      {dataProcessingStats?.column_count || 0}
                     </p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Processing Time</p>
                     <p className="text-lg font-semibold text-gray-900">
-                      {dataProcessingStats.processing_time.toFixed(1)}s
+                      {(dataProcessingStats?.processing_time || 0).toFixed(1)}s
                     </p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Memory Usage</p>
                     <p className="text-lg font-semibold text-gray-900">
-                      {dataProcessingStats.memory_usage.toFixed(1)}%
+                      {(dataProcessingStats?.memory_usage || 0).toFixed(1)}%
                     </p>
                   </div>
                 </div>

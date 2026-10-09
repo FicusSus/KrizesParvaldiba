@@ -1,8 +1,7 @@
-"""
-Not Found Page
-
-404 page for routes that don't exist.
-"""
+/**
+ * Not Found Page
+ * 404 page for routes that don't exist.
+ */
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';

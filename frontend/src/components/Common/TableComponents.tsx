@@ -1,8 +1,7 @@
-"""
-Table Components
-
-Additional table-related components: StatusBadge, SeverityBadge, ActionButtons, etc.
-"""
+/**
+ * Table Components
+ * Additional table-related components: StatusBadge, SeverityBadge, ActionButtons, etc.
+ */
 
 import React from 'react';
 import { Eye, Edit, Trash2, AlertTriangle, CheckCircle, XCircle, Info, Clock } from 'lucide-react';

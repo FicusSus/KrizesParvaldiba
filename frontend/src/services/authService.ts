@@ -1,5 +1,5 @@
 import { apiService } from './api'
-import { User, LoginCredentials, RegisterCredentials, ApiResponse } from '../types'
+import type { User, LoginCredentials, RegisterCredentials, ApiResponse } from '../types'
 import { useAuthStore } from '../stores/authStore'
 
 // Endpoint paths

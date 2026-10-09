@@ -62,7 +62,7 @@ class Warning(Base):
         send_attempts: Number of send attempts
         last_attempt: Last send attempt timestamp
         error_message: Error message if sending failed
-        metadata: Additional metadata as JSON
+        extra_data: Additional metadata as JSON
         created_at: Creation timestamp
         updated_at: Last update timestamp
     """
@@ -98,7 +98,7 @@ class Warning(Base):
     send_attempts: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     last_attempt: Mapped[Optional[datetime]] = mapped_column(DateTime)
     error_message: Mapped[Optional[str]] = mapped_column(Text)
-    metadata: Mapped[Optional[dict]] = mapped_column(Text, default={})
+    extra_data: Mapped[Optional[dict]] = mapped_column(Text, default={})
     created_at: Mapped[datetime] = mapped_column(
         DateTime,
         default=datetime.utcnow,

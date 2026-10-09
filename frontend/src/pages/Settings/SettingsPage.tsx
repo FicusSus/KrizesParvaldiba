@@ -1,8 +1,7 @@
-"""
-Settings Page
-
-Page for application settings.
-"""
+/**
+ * Settings Page
+ * Page for application settings.
+ */
 
 import React from 'react';
 

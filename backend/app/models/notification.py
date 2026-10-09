@@ -47,7 +47,7 @@ class Notification(Base):
         message: Notification message
         is_read: Whether the notification has been read
         is_archived: Whether the notification has been archived
-        metadata: Additional metadata as JSON
+        extra_data: Additional metadata as JSON
         created_at: Creation timestamp
         updated_at: Last update timestamp
     """
@@ -72,7 +72,7 @@ class Notification(Base):
     message: Mapped[str] = mapped_column(Text, nullable=False)
     is_read: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     is_archived: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
-    metadata: Mapped[Optional[dict]] = mapped_column(Text, default={})
+    extra_data: Mapped[Optional[dict]] = mapped_column(Text, default={})
     created_at: Mapped[datetime] = mapped_column(
         DateTime,
         default=datetime.utcnow,

@@ -473,22 +473,4 @@ export interface WarningFilterState {
   search: string;
 }
 
-// Export all types
-export type {
-  SelectOption as SelectOption,
-  FormField as FormField,
-  ChartData as ChartData,
-  ChartDataset as ChartDataset,
-  ToastMessage as ToastMessage,
-  ModalState as ModalState,
-  QueryParams as QueryParams,
-  FilterParams as FilterParams,
-  TableColumn as TableColumn,
-  UserPreferences as UserPreferences,
-  CrisisTrendData as CrisisTrendData,
-  DataProcessingStats as DataProcessingStats,
-  AppState as AppState,
-  CrisisFilterState as CrisisFilterState,
-  DataFilterState as DataFilterState,
-  WarningFilterState as WarningFilterState,
-}
+// All types are already exported inline above

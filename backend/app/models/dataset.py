@@ -50,7 +50,7 @@ class Dataset(Base):
         row_count: Number of rows in the dataset
         column_count: Number of columns
         file_size: File size in bytes
-        metadata: Additional metadata as JSON
+        extra_data: Additional metadata as JSON
         processing_time: Time taken to process in seconds
         error_message: Error message if processing failed
         created_at: Creation timestamp
@@ -78,7 +78,7 @@ class Dataset(Base):
     row_count: Mapped[Optional[int]] = mapped_column(BigInteger)
     column_count: Mapped[Optional[int]] = mapped_column(Integer)
     file_size: Mapped[Optional[int]] = mapped_column(BigInteger)  # bytes
-    metadata: Mapped[Optional[dict]] = mapped_column(Text, default={})
+    extra_data: Mapped[Optional[dict]] = mapped_column(Text, default={})
     processing_time: Mapped[Optional[float]] = mapped_column(Float)
     error_message: Mapped[Optional[str]] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(

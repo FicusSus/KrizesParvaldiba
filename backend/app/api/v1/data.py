@@ -7,7 +7,8 @@ This module provides endpoints for data source and dataset management.
 import os
 from datetime import datetime
 from pathlib import Path
-from typing import List, Optional, UploadFile
+from typing import List, Optional
+from fastapi import UploadFile
 
 from fastapi import APIRouter, BackgroundTasks, Depends, File, Form, HTTPException, Query, status
 from fastapi.responses import JSONResponse

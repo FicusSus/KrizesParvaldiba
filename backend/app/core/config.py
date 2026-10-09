@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     PORT: int = 8000
     
     # Database
-    DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost:5432/crisis_db"
+    DATABASE_URL: str = "sqlite+aiosqlite:///./data/test.db"
     DATABASE_POOL_SIZE: int = 20
     DATABASE_MAX_OVERFLOW: int = 10
     DATABASE_POOL_TIMEOUT: int = 30

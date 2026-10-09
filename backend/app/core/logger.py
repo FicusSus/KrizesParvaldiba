@@ -60,13 +60,21 @@ def setup_logging():
     )
     
     # Configure standard logging to redirect to structlog
-    logging.basicConfig(
-        level=getattr(logging, settings.LOG_LEVEL),
-        handlers=[
-            structlog.stdlib.Handler(),
-        ],
-        format="%(message)s",
-    )
+    # Note: structlog 26+ has changed API, using basic handler
+    try:
+        logging.basicConfig(
+            level=getattr(logging, settings.LOG_LEVEL),
+            handlers=[
+                structlog.stdlib.ProcessorHandler(processor=structlog.processors.JSONRenderer()),
+            ],
+            format="%(message)s",
+        )
+    except AttributeError:
+        # Fallback for structlog 26+
+        logging.basicConfig(
+            level=getattr(logging, settings.LOG_LEVEL),
+            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        )
     
     # Ensure logs directory exists
     logs_dir = Path("logs")

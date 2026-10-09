@@ -1,8 +1,7 @@
-"""
-DataTable Component
-
-A reusable, generic data table component with sorting, pagination, and filtering capabilities.
-"""
+/**
+ * DataTable Component
+ * A reusable, generic data table component with sorting, pagination, and filtering capabilities.
+ */
 
 import React, { useState, useMemo, useCallback } from 'react';
 import { ChevronUp, ChevronDown, ChevronsUpDown, Search } from 'lucide-react';

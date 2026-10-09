@@ -65,7 +65,7 @@ class Crisis(Base):
         confidence_score: Confidence score of the prediction (0-1)
         impact_score: Impact score of the crisis (0-100)
         parameters: Parameters used for prediction as JSON
-        metadata: Additional metadata as JSON
+        extra_data: Additional metadata as JSON
         created_at: Creation timestamp
         updated_at: Last update timestamp
     """
@@ -99,7 +99,7 @@ class Crisis(Base):
     confidence_score: Mapped[Optional[float]] = mapped_column(Float)
     impact_score: Mapped[Optional[float]] = mapped_column(Float)
     parameters: Mapped[Optional[dict]] = mapped_column(Text, default={})
-    metadata: Mapped[Optional[dict]] = mapped_column(Text, default={})
+    extra_data: Mapped[Optional[dict]] = mapped_column(Text, default={})
     created_at: Mapped[datetime] = mapped_column(
         DateTime,
         default=datetime.utcnow,
