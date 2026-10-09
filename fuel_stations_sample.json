@@ -1,0 +1,12 @@
+[
+ {"viss_id":168445,"name":"MC, SIA, degvielas uzpildes stacija","address":"Talsu iela 23, Dundaga, Dundagas pagasts, Talsu novads, LV-3270","phone":"+37129445293","email":"birojs@mc.lv"},
+ {"viss_id":165666,"name":"Virši Žagarkalns","address":"Katrīnkalns 1, Drabešu pagasts, Cēsu novads, LV-4101","phone":"+37125400196","email":"birojs@virsi.lv"},
+ {"viss_id":115059,"name":"Neste Jugla","address":"Brīvības gatve 386, Rīga, LV-1024","phone":"+37180009006","email":"neste.latvija@neste.com"},
+ {"viss_id":240,"name":"Neste Ogre","address":"Rīgas iela 11a, Ogre, Ogres novads, LV-5001","phone":"+37180009006","email":"neste.latvija@neste.com"},
+ {"viss_id":170653,"name":"Latvijas nafta (Ainaži)","address":"Ainažu robežkontroles punkts, Ainaži, Limbažu novads, LV-4035","phone":"+37129225044","email":null},
+ {"viss_id":115195,"name":"Neste Ventspils","address":"Lāčplēša iela 1, Ventspils, LV-3601","phone":"+37180009006","email":"neste.latvija@neste.com"},
+ {"viss_id":170650,"name":"VIADA Baltija - DUS Jelgava 2","address":"Lietuvas šoseja 72, Jelgava, LV-3008","phone":"+37167301536","email":null},
+ {"viss_id":114953,"name":"VIADA Baltija - DUS Mūkusalas 1","address":"Mūkusalas iela 59, Rīga, LV-1004","phone":"+37167301518","email":null},
+ {"viss_id":167532,"name":"Virši Krustpils","address":"Varoņu iela 10, Jēkabpils, LV-5202","phone":"+37120219859","email":"birojs@virsi.lv"},
+ {"viss_id":210,"name":"CIRCLE K DAUGAVPILS 1","address":"Ventspils iela 28, Daugavpils, LV-5404","phone":"+37125488912","email":null}
+]
