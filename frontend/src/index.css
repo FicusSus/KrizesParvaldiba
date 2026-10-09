@@ -64,7 +64,21 @@
   }
 
   .form-select {
-    @apply form-input appearance-none bg-no-repeat bg-right-8 bg-[url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22currentColor%22><path%20fill-rule%3D%22evenodd%22%20d%3D%22M5.293%207.293a1%201%200%20011.414%200L10%2010.586l3.293-3.293a1%201%200%20111.414%201.414l-4%204a1%201%200%2001-1.414%200l-4-4a1%201%200%20010-1.414z%22%20clip-rule%3D%22evenodd%22%20/%3E</svg>')] pr-8;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5em 1.5em;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22currentColor%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.293%207.293a1%201%200%20011.414%200L10%2010.586l3.293-3.293a1%201%200%20111.414%201.414l-4%204a1%201%200%2001-1.414%200l-4-4a1%201%200%20010-1.414z%22%20clip-rule%3D%22evenodd%22%20/%3E%3C/svg%3E");
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-width: 1px;
+    border-color: rgb(209 213 219);
+    border-radius: 0.5rem;
+    background-color: white;
+    color: rgb(17 24 39);
   }
 
   .badge {
@@ -185,9 +199,7 @@
     @apply hover:bg-primary-700;
   }
 
-  .text-gray-400 {
-    @apply text-gray-400;
-  }
+
 
   .scrollbar-thin::-webkit-scrollbar {
     @apply w-2;
