@@ -1,1 +1,3 @@
 # KrizesParvaldiba
+
+Connection test branch.
